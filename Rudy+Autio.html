@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capron + Autio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <style>
+        /* Reset & basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        /* Full-screen border container */
+        .screener {
+            min-height: 100vh;
+            width: 100%;
+            background-color: #fefae0;
+            border: 5px solid #219ebc;
+            padding: 20px;
+        }
+
+        /* Heading */
+        h2 {
+            font-family: "Marck Script", cursive;
+            text-align: center;
+            margin: 80px 0 50px 0;
+            font-size: clamp(2rem, 5.5vw, 3rem);
+            color: #ff6392;
+            text-decoration: underline;
+        }
+
+        /* Image container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        /* Each figure */
+        .image-container figure {
+            display: flex;
+            flex-direction: column; /* stack image + caption */
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Images */
+        .image-container figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Desktop widths */
+        .image-container figure:nth-child(1),
+        .image-container figure:nth-child(3),
+        .image-container figure:nth-child(5) {
+            flex: 0 0 20%; /* larger images */
+        }
+
+        .image-container figure:nth-child(2),
+        .image-container figure:nth-child(4) {
+            flex: 0 0 12%; /* smaller images */
+        }
+
+        /* Captions */
+        .image-container figcaption {
+            font-size: 1.5rem;
+            color: #8338ec;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        /* Mobile styles */
+    @media (max-width: 768px) {
+    /* Show mobile-only elements */
+    .mobile-only {
+        display: inline;
+    }
+
+    /* Heading adjustments */
+    h2 {
+        margin: 50px 0 30px 0;
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    /* Stack images vertically */
+    .image-container {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 50px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Larger images */
+    .image-container figure:nth-child(1),
+    .image-container figure:nth-child(3),
+    .image-container figure:nth-child(5) {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    /* Smaller images */
+    .image-container figure:nth-child(2),
+    .image-container figure:nth-child(4) {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="screener">
+        <h2>My Vision: Roger Capron + Rudy Autio</h2>
+
+        <div class="image-container">
+            <figure>
+                <img src="Leaf Imprints on Clay Tiles.gif" alt="Leaf imprints on clay tiles">
+                <figcaption>Roger Capron stamped clay tiles with organic motifs.</figcaption>
+            </figure>
+            <figure>
+                <img src="plus.png" alt="Plus sign">
+            </figure>
+            <figure>
+                <img src="Fish on the Pot.gif" alt="Fish drawing echoing pot contours">
+                <figcaption>Rudy Autio painted figures, animals, and stories responding to the shape of the base form.</figcaption>
+            </figure>
+            <figure>
+                <img src="equal.png" alt="Equals sign">
+            </figure>
+            <figure>
+                <img src="Outline + Tiles.gif" alt="Outline and tiles">
+                <figcaption>The final output combines these two approaches (imprinting motifs + fluid lines responding to forms)</figcaption>
+            </figure>
+        </div>
+    </div>
+
+</body>
+</html>
